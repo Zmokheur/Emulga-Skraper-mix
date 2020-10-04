@@ -1,0 +1,46 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Information ShortName="Emulga - gb"
+               LongName="Emulga - Game Boy"
+               Description="Nintendo Game Boy mix originally by FreemanQC"
+               Author="Zmokheur" />
+  <Viewport Color="#00FFFFFF" Width="1200" Height="800" />
+  <Drawings>
+    <Item IfSystem="IsNotInTheListOrAncestors:9" Type="LocalFile" LocalFilePath="NotForYou.png">
+      <Display X="50%" Y="50%" Width="100%" Height="100%" Anchor="VCenterHCenter" />
+    </Item>
+    <Item IfSystem="IsInTheListOrAncestors:9" TestOnly="true">
+      <Children>
+        <!-- Screenshot -->
+         <Item Type ="Screenshot" >
+            <Display X="49.8%" Y="13%" Width="20%" Height="27%" KeepRatio="false" Antialiasing="High" Anchor="TopHCenter" />
+            <Fallback Type="ScreenshotTitle">
+                <Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+            </Fallback>
+        </Item>
+        <!-- Cabinet -->
+        <Item Type="LocalFile" LocalFilePath="foreground.png">
+            <Display X="50%" Y="0%" Width="100%" Height="95%" Anchor="TopHCenter" KeepRatio="true" />
+        </Item>
+        <!-- Wheel on right -->
+        <Item Type="Wheel">
+          <Display X="100%" Y="100%" Width="50%" Height="33.3%" Anchor="BottomRight" />
+        </Item>
+        <!-- 3D Box -->
+        <Item Type="Box3D">
+          <Display X="0%" Y="100%" Width="45%" Height="70%" Anchor="BottomLeft" />
+        </Item>
+        <!-- Support -->
+        <Item Type="Support">
+          <Display X="27%" Y="100%" Width="20%" Height="36.5%" Anchor="BottomLeft" />
+        </Item>
+        <!-- Region -->
+        <Item Type="Region1">
+           <Display X="100%" Y="0%" Width="10%" Height="10%" KeepRatio="true" Anchor="TopRight" />
+        </Item>
+        <Item Type="Region2">
+           <Display X="100%" Y="12%" Width="10%" Height="10%" KeepRatio="true" Anchor="TopRight" />
+        </Item>
+      </Children>
+    </Item>
+  </Drawings>
+</ImageComposition>

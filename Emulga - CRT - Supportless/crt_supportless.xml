@@ -1,0 +1,45 @@
+<ImageComposition xsi:noNamespaceSchemaLocation="https://www.skraper.net/ImageComposition.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ <Information ShortName="Emulga - CRT SL"
+              LongName="Emulga - CRT Supportless"
+              Description="CRT without game support mix originally by FreemanQC"
+              Author="Zmokheur" />
+  <Viewport Color="#00FFFFFF" Width="1200" Height="800" />
+  <Drawings>
+    <Item TestOnly="true">
+      <Children>
+       <!-- Cabinet - Used as new reference for childrens -->
+        <Item Type="LocalFile" LocalFilePath="background.png">
+          <Display X="50%" Y="0%" Width="62.5%" Height="75%" KeepRatio="true" Anchor="TopHCenter" />
+          <Children Reference="Parent">
+            <!-- Screenshot -->
+            <Item Type ="Screenshot">
+              <Display X="50%" Y="50%" Width="95%" Height="95%" KeepRatio="true" Antialiasing="High" Anchor="VCenterHCenter" />
+              <Fallback Type="ScreenshotTitle">
+                <Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
+              </Fallback>
+            </Item>
+            <!-- Screen -->
+            <Item Type="LocalFile" LocalFilePath="foreground.png">
+              <Display X="50%" Y="50%" Width="100%" Height="100%" Anchor="VCenterHCenter" KeepRatio="true" />
+            </Item>
+          </Children>
+        </Item>
+        <!-- Wheel on right -->
+        <Item Type="Wheel">
+          <Display X="100%" Y="100%" Width="50%" Height="33.3%" Anchor="BottomRight" />
+        </Item>
+        <!-- 3D Box -->
+        <Item Type="Box3D">
+          <Display X="0%" Y="100%" Width="50%" Height="75%" Anchor="BottomLeft" />
+        </Item>
+        <!-- Region -->
+        <Item Type="Region1">
+           <Display X="100%" Y="0%" Width="10%" Height="10%" KeepRatio="true" Anchor="TopRight" />
+        </Item>
+        <Item Type="Region2">
+           <Display X="100%" Y="12%" Width="10%" Height="10%" KeepRatio="true" Anchor="TopRight" />
+        </Item>
+      </Children>
+    </Item>
+  </Drawings>
+</ImageComposition>
