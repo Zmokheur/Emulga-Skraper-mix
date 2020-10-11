@@ -3,7 +3,7 @@
 This is a conversion of Emulga custom mix image profiles to use them with Skraper ( https://www.skraper.net/ )
 Working with Skraper 1.1.1
 
-These mix images are the one used in Emuga's oficial themes but will work great with the original Recalbox theme and other themes. 
+These mix images are the one used in Emuga's official themes but will work great with the original Recalbox theme and other themes. 
 The screenshots below have been taken using the Emulga Box theme available at https://github.com/Emulga.
 
 ![NES](https://s14.postimg.cc/eub9tupi9/gl-nes.png)
