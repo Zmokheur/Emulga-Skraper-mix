@@ -12,7 +12,7 @@
       <Children>
         <!-- Screenshot -->
          <Item Type ="Screenshot" >
-            <Display X="50%" Y="9.2%" Width="20%" Height="27%" KeepRatio="false" Antialiasing="High" Anchor="TopHCenter" />
+            <Display X="470" Y="66" Width="260" Height="228" KeepRatio="false" Antialiasing="High" Anchor="TopLeft" />
             <Fallback Type="ScreenshotTitle">
                 <Fallback Type="LocalFile" LocalFilePath="NoScreenshot.png" />
             </Fallback>
